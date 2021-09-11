@@ -1,2 +1,3 @@
 # kwote
-A quote collecting website
+
+> A simple website for quote enthusiasts
