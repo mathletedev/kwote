@@ -1,5 +1,6 @@
 import { signIn, signOut, useSession } from "next-auth/client";
 import { FC, Fragment } from "react";
+import { __callbackUrl__ } from "../lib/constants";
 
 const Index: FC = () => {
 	const [session, loading] = useSession();
@@ -13,9 +14,7 @@ const Index: FC = () => {
 					Not signed in
 					<br />
 					<button
-						onClick={() =>
-							signIn("google", { callbackUrl: "http://localhost:3000/" })
-						}
+						onClick={() => signIn("google", { callbackUrl: __callbackUrl__ })}
 					>
 						Sign in with Google
 					</button>
