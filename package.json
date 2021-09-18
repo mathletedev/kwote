@@ -23,12 +23,15 @@
 	},
 	"homepage": "https://github.com/mathletedev/kwote#readme",
 	"dependencies": {
-		"dotenv-safe": "^8.2.0",
+		"mongodb": "3.7.1",
+		"mongoose": "^6.0.6",
 		"next": "11.1.2",
+		"next-auth": "^3.29.0",
 		"react": "17.0.2",
 		"react-dom": "17.0.2"
 	},
 	"devDependencies": {
+		"@types/mongodb": "^4.0.7",
 		"@types/react": "17.0.20",
 		"autoprefixer": "^10.3.4",
 		"eslint": "7.32.0",
