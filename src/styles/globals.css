@@ -2,7 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+body {
+	@apply bg-indigo-50;
+}
+
+.text-grey {
 	@apply text-gray-500;
-	@apply text-lg;
+}
+
+.text-button {
+	@apply bg-indigo-500;
+	@apply rounded;
+	@apply text-white;
+	@apply py-1;
+	@apply px-3;
+
+	@apply transition;
+	@apply hover:bg-indigo-600;
+}
+
+.icon-button {
+	@apply h-5;
+	@apply w-5;
+	@apply text-indigo-500;
+
+	@apply transition;
+	@apply hover:text-indigo-600;
 }
